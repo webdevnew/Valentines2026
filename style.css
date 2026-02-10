@@ -37,7 +37,7 @@ h1 {
 .container {
     display: grid;
     background: var(--neutral-900);
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 3px;
     box-shadow: 7px 7px 2px 0px var(--valentine-primary-200);
     width: 300px;
@@ -81,6 +81,7 @@ h1 {
     gap: 1rem;
 
 }
+
 
 
 
