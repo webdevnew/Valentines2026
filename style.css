@@ -40,7 +40,7 @@ h1 {
     padding: 2rem;
     border-radius: 3px;
     box-shadow: 7px 7px 2px 0px var(--valentine-primary-200);
-    width: 400px;
+    width: 100%;
 }
 
 .container, .valentine {
@@ -81,3 +81,4 @@ h1 {
     gap: 1rem;
 
 }
+
