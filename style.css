@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+:root {
+    --neutral-900: hsl(0, 0%, 98%);
+    --valentine-primary-400: hsl(350, 100%, 88%);
+    --valentine-primary-300: hsl(350, 50%, 58%);
+    --valentine-primary-200: hsl(350, 50%, 34%);
+
+    --ff-primary: "Zain", "sans-serif";
+    --ff-accent: "Cookie", "serif";
+
+    --tran01: all 0.1s ease;
+    --tran02: all 0.2s ease;
+    --tran03: all 0.3s ease;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    background: var(--valentine-primary-400);
+    height: 90vh;
+    font-size: 1rem;
+    font-family: var(--ff-primary);
+}
+
+h1 {
+    font-family: var(--ff-accent);
+    font-size: 3rem;
+}
+
+.container {
+    display: grid;
+    background: var(--neutral-900);
+    padding: 2rem;
+    border-radius: 3px;
+    box-shadow: 7px 7px 2px 0px var(--valentine-primary-200);
+    width: 500px;
+}
+
+.container, .valentine {
+    gap: 1rem;
+}
+
+.buttons.disable #no {
+    display: none;
+}
+
+.buttons.disable {
+    grid-template-columns: 1fr;
+}
+
+.buttons a {
+    background-color: var(--valentine-primary-200);
+    cursor: pointer;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: var(--neutral-900);
+}
+
+.buttons a:hover {
+    background-color: var(--valentine-primary-300);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.valentine {
+    display: grid;
+    gap: 1rem;
+}
